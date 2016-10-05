@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:minHeight="?attr/actionBarSize"
+            >
+            <ImageView
+                android:id="@+id/ivImagePreview"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/bg_recipe_place_holder"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnCam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="27dp"
+            android:background="@drawable/bg_dotted_border">
+
+            <TextView
+                android:id="@+id/tvRecipeName"
+                android:gravity="center"
+                android:textColor="#d2d2d2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/placeholder_recipe_name"/>
+            <ImageButton
+                android:id="@+id/btnEditRecipeName"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/ic_menu_edit"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="27dp"
+            android:background="@drawable/bg_dotted_border">
+
+            <TextView
+                android:id="@+id/tvRecipeType"
+                android:gravity="center"
+                android:textColor="#d2d2d2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/placeholder_recipe_type"/>
+            <ImageButton
+                android:id="@+id/btnEditRecipeType"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBeginner"
+                android:gravity="center"
+                android:text="Beginner"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_green_rect" />
+            <TextView
+                android:id="@+id/tvSousChef"
+                android:gravity="center"
+                android:text="Sous Chef"
+                android:textColor="#333333"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_black_border" />
+            <TextView
+                android:id="@+id/tvMaster"
+                android:gravity="center"
+                android:text="Master"
+                android:textColor="#333333"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_black_border" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvServes"
+                    android:gravity="center"
+                    android:text="Serves  "
+                    android:textColor="#333333"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_dotted_border_2"
+                    android:paddingLeft="18dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:paddingRight="18dp"
+                    android:drawablePadding="11dp"
+                    android:drawableLeft="@drawable/ic_people"
+                    android:drawableStart="@drawable/ic_people"/>
+                <ImageButton
+                    android:id="@+id/btnEditServes"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="-32dp"
+                    android:layout_marginStart="-32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/tvServes"
+                    android:layout_toRightOf="@id/tvServes"
+                    android:background="@android:drawable/ic_menu_edit"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCookingTime"
+                    android:gravity="center"
+                    android:text="Cooking time   "
+                    android:textColor="#333333"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_dotted_border_2"
+                    android:paddingLeft="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp"
+                    android:drawablePadding="11dp"
+                    android:drawableLeft="@drawable/ic_clock"
+                    android:drawableStart="@drawable/ic_clock"/>
+                <ImageButton
+                    android:id="@+id/btnEditCookingTime"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="-32dp"
+                    android:layout_marginStart="-32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/tvCookingTime"
+                    android:layout_toRightOf="@id/tvCookingTime"
+                    android:background="@android:drawable/ic_menu_edit"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="27dp"
+            android:background="@drawable/bg_dotted_border">
+
+            <TextView
+                android:id="@+id/tvNotes"
+                android:gravity="center"
+                android:textColor="#d2d2d2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/placeholder_story"/>
+            <ImageButton
+                android:id="@+id/btnEditNotes"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@android:drawable/ic_menu_edit"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

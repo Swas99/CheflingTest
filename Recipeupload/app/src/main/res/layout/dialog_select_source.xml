@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center">
+    <TextView
+        android:text="Select Source"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="11dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp">
+        <Button
+            android:id="@+id/btnUseGallery"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Gallery"
+            android:padding="18dp"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableTop="@android:drawable/ic_menu_gallery"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#99FFFFFF"
+            />
+        <Button
+            android:id="@+id/btnUseCamera"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:padding="18dp"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/buttonBarButtonStyle"
+            android:drawableTop="@android:drawable/ic_menu_camera"/>
+    </LinearLayout>
+
+</LinearLayout>
